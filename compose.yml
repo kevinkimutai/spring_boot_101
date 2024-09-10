@@ -1,0 +1,9 @@
+services:
+  postgres:
+    image: 'postgres:16.4'
+    environment:
+      - 'POSTGRES_DB=runners'
+      - 'POSTGRES_PASSWORD=p@ssw0rd'
+      - 'POSTGRES_USER=root'
+    ports:
+      - '5432:5431'
